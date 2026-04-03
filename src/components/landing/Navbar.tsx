@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 const links = [
   { href: "#inicio", label: "Início" },
@@ -12,6 +13,7 @@ const links = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const whatsappUrl = "https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -22,8 +24,12 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-charcoal/95 backdrop-blur-md shadow-lg py-3" : "bg-transparent py-5"}`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#inicio" className="font-serif text-xl font-bold text-primary-foreground tracking-wide">
-          KORVIAM
+        <a href="#inicio" className="flex items-center">
+          <img 
+            src="/Eliezer 01.jpeg" 
+            alt="Eliezer Alumínio Logo" 
+            className="h-10 md:h-12 w-auto object-contain"
+          />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -32,7 +38,13 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a href="#contato" className="px-5 py-2 bg-primary-foreground text-primary text-sm font-semibold rounded-sm hover:bg-silver transition-colors">
+          <a 
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#25D366] text-white text-sm font-black rounded-lg hover:bg-[#12883d] transition-all shadow-[0_4px_12px_rgba(37,211,102,0.3)] hover:scale-105 active:scale-95"
+          >
+            <WhatsAppIcon size={18} color="white" />
             Orçamento
           </a>
         </div>
@@ -50,8 +62,15 @@ const Navbar = () => {
                 {l.label}
               </a>
             ))}
-            <a href="#contato" onClick={() => setOpen(false)} className="block w-full text-center px-5 py-3 bg-primary-foreground text-primary text-sm font-semibold rounded-sm">
-              Orçamento
+            <a 
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)} 
+              className="flex items-center justify-center gap-3 w-full text-center px-5 py-4 bg-[#25D366] text-white text-base font-black rounded-lg shadow-[0_8px_20px_rgba(37,211,102,0.3)] active:scale-95"
+            >
+              <WhatsAppIcon size={20} color="white" />
+              Solicitar Orçamento
             </a>
           </div>
         </div>

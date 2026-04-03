@@ -6,7 +6,11 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h3 className="font-serif text-2xl font-bold text-primary-foreground mb-4">Korviam Alumínio</h3>
+            <img 
+              src="/Eliezer 01.jpeg" 
+              alt="Eliezer Alumínio Logo" 
+              className="h-12 w-auto object-contain mb-6"
+            />
             <p className="text-steel leading-relaxed text-sm">
               Especialistas em esquadrias de alumínio sob medida para projetos residenciais, 
               comerciais e corporativos. Qualidade, precisão e alto padrão de acabamento.

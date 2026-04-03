@@ -1,4 +1,5 @@
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 const CtaSection = () => {
   const whatsappUrl = "https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.";
@@ -14,19 +15,19 @@ const CtaSection = () => {
           <p className="text-silver text-lg mb-10 leading-relaxed">
             Entre em contato com nossa equipe técnica e receba uma proposta personalizada para o seu projeto.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-600 hover:bg-green-700 text-primary-foreground font-semibold rounded-sm transition-colors duration-300"
+              className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#25D366] hover:bg-[#12883d] text-white font-black rounded-lg transition-all duration-300 shadow-[0_8px_20px_rgba(37,211,102,0.4)] hover:scale-105 active:scale-95"
             >
-              <MessageCircle size={20} />
+              <WhatsAppIcon size={24} color="white" />
               WhatsApp
             </a>
             <a
               href="#contato"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-foreground text-primary font-semibold rounded-sm hover:bg-silver transition-colors duration-300"
+              className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-primary-foreground text-primary font-black rounded-lg hover:bg-silver transition-all duration-300 shadow-lg hover:scale-105 active:scale-95"
             >
               Enviar mensagem
               <ArrowRight size={20} />
