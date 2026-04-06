@@ -34,7 +34,7 @@ const ContactSection = () => {
 
             <div className="space-y-4">
               {[
-                { icon: Phone, label: "Telefone / WhatsApp", value: "(19) 0000-0000" },
+                { icon: Phone, label: "Telefone / WhatsApp", value: "(19) 99578-1860" },
                 { icon: Mail,  label: "E-mail",              value: "contato@korviam.com.br" },
                 { icon: MapPin, label: "Localização",        value: "Campinas, São Paulo" },
               ].map(({ icon: Icon, label, value }) => (

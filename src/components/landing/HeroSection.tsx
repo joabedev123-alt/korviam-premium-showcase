@@ -2,7 +2,7 @@ const heroImage = "/hero-facade-01.jpeg";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 const HeroSection = () => {
-  const whatsappUrl = "https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.";
+  const whatsappUrl = "https://wa.me/5519995781860?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.";
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">

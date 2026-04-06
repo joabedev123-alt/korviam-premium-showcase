@@ -13,7 +13,7 @@ const links = [
 const Navbar = () => {
   const [atTop, setAtTop] = useState(true);
   const [open, setOpen] = useState(false);
-  const whatsappUrl = "https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.";
+  const whatsappUrl = "https://wa.me/5519995781860?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.";
 
   useEffect(() => {
     const onScroll = () => setAtTop(window.scrollY < 10);

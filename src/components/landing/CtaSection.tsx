@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 const CtaSection = () => {
-  const whatsappUrl = "https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.";
+  const whatsappUrl = "https://wa.me/5519995781860?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.";
 
   return (
     <section className="py-16 sm:py-24 lg:py-32 metallic-shine relative overflow-hidden">
