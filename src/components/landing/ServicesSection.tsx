@@ -1,7 +1,7 @@
 import { Layers, DoorOpen, Building2, LayoutGrid, RefreshCcw, Settings } from "lucide-react";
 
 const services = [
-  { icon: Layers, title: "Janelas de Alumínio", description: "Janelas de correr, maxim-ar, pivotantes e guilhotina com perfis de alto desempenho e vedação superior." },
+  { icon: Layers, title: "Janelas de Alumínio", description: "Janelas de correr, maxim-ar, pivotantes e persianas integradas com perfis de alto desempenho e vedação superior." },
   { icon: DoorOpen, title: "Portas Sob Medida", description: "Portas de correr, pivotantes e de abrir em alumínio, com design contemporâneo e funcionalidade." },
   { icon: Building2, title: "Fachadas Envidraçadas", description: "Sistemas de fachada em pele de vidro e structural glazing para projetos comerciais e corporativos." },
   { icon: LayoutGrid, title: "Fechamento de Ambientes", description: "Divisórias e fechamentos em alumínio e vidro para escritórios, salas e áreas internas." },

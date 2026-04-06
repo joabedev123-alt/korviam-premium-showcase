@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-facade.jpg";
+const heroImage = "/hero-facade-01.jpeg";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 const HeroSection = () => {
@@ -17,7 +17,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center pt-24 pb-16">
         <div className="max-w-4xl mx-auto">
-          <p className="text-silver uppercase tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] text-xs sm:text-sm font-medium mb-3 md:mb-6 animate-fade-in-up">
+          <p className="text-silver uppercase tracking-[0.25em] sm:tracking-[0.35em] md:tracking-[0.5em] text-base sm:text-lg md:text-xl lg:text-2xl font-semibold mb-4 md:mb-8 animate-fade-in-up">
             Korviam Alumínio
           </p>
           <h2
@@ -58,11 +58,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden sm:block">
-        <div className="w-6 h-10 border-2 border-primary-foreground/30 rounded-full flex items-start justify-center p-1.5">
-          <div className="w-1.5 h-3 bg-primary-foreground/50 rounded-full" />
-        </div>
-      </div>
     </section>
   );
 };

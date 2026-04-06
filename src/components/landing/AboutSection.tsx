@@ -1,5 +1,6 @@
-import aboutImage from "@/assets/about-project.jpg";
 import { Award, Users, Target, Wrench } from "lucide-react";
+
+const aboutImage = "/about-project-01.jpeg";
 
 const stats = [
   { icon: Award, label: "Qualidade Certificada", value: "Excelência" },

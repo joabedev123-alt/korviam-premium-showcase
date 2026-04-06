@@ -4,7 +4,7 @@ const WhatsAppButton = () => {
   const whatsappUrl = "https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.";
 
   return (
-    <div className="fixed bottom-10 right-6 z-50">
+    <div className="fixed bottom-8 right-4 sm:bottom-10 sm:right-6 z-50">
       <a
         href={whatsappUrl}
         target="_blank"

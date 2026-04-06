@@ -29,13 +29,13 @@ const Navbar = () => {
           : "opacity-0 -translate-y-full pointer-events-none py-5"
       }`}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between relative">
+      <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between relative">
         {/* Logo — esquerda */}
         <a href="#inicio" className="flex items-center flex-shrink-0">
           <img
             src="/Eliezer 01-Photoroom.png"
             alt="Eliezer Alumínio Logo"
-            className="h-20 md:h-28 w-auto object-contain"
+            className="h-16 sm:h-20 md:h-28 lg:h-36 w-auto object-contain"
           />
         </a>
 
