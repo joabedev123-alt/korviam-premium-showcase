@@ -6,8 +6,6 @@ const allImages = [
   { src: "/p02.jpeg", title: "Janelas Alto Padrão",    category: "Residencial" },
   { src: "/p03.jpeg", title: "Portas de Correr",       category: "Residencial" },
   { src: "/p04.jpeg", title: "Fachada Envidraçada",    category: "Comercial"   },
-  { src: "/p05.jpeg", title: "Fechamento de Varanda",  category: "Residencial" },
-  { src: "/p06.jpeg", title: "Estrutura Corporativa",  category: "Corporativo" },
   { src: "/p07.jpeg", title: "Janelas Pivotantes",     category: "Residencial" },
   { src: "/p08.jpeg", title: "Divisórias em Vidro",    category: "Comercial"   },
   { src: "/p09.jpeg", title: "Retrofit de Esquadrias", category: "Retrofit"    },
@@ -20,9 +18,11 @@ const allImages = [
   { src: "/p17.jpeg", title: "Esquadrias Sob Medida",  category: "Residencial" },
   { src: "/p18.jpeg", title: "Fechamento Externo",     category: "Comercial"   },
   { src: "/p19.jpeg", title: "Projeto Integrado",      category: "Corporativo" },
+  { src: "/p21.jpeg", title: "Acabamento Premium",     category: "Residencial" },
+  { src: "/p22.jpeg", title: "Projeto Exclusivo",      category: "Corporativo" },
 ];
 
-// 3 fileiras: 6 imagens cada (com repetição para loop mais suave)
+// 3 fileiras distribuídas: 6 / 6 / 6 (com repetição para loop suave)
 const rows = [
   allImages.slice(0, 6),
   allImages.slice(6, 12),
