@@ -37,23 +37,14 @@ const HeroSection = () => {
             Soluções completas em alumínio para projetos residenciais, comerciais e corporativos com alto nível de acabamento e desempenho.
           </p>
           <div
-            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in-up"
+            className="flex justify-center animate-fade-in-up"
             style={{ animationDelay: "0.6s" }}
           >
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 px-6 py-4 sm:px-10 sm:py-5 bg-[#25D366] text-white font-black rounded-lg hover:bg-[#12883d] transition-all duration-300 shadow-[0_8px_20px_rgba(37,211,102,0.4)] hover:-translate-y-1 active:scale-95 text-sm sm:text-base w-full sm:w-auto"
-            >
-              <WhatsAppIcon size={30} color="white" className="shrink-0" />
-              Solicite seu orçamento
-            </a>
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 px-6 py-4 sm:px-10 sm:py-5 border-2 border-[#25D366] text-[#25D366] font-black rounded-lg hover:bg-[#25D366]/10 transition-all duration-300 shadow-lg hover:-translate-y-1 active:scale-95 bg-white/5 backdrop-blur-sm text-sm sm:text-base w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 sm:px-12 sm:py-5 border-2 border-[#25D366] text-[#25D366] font-black rounded-lg hover:bg-[#25D366]/10 transition-all duration-300 shadow-lg hover:-translate-y-1 active:scale-95 bg-white/5 backdrop-blur-sm text-sm sm:text-base w-full sm:w-auto"
             >
               <WhatsAppIcon size={30} color="#25D366" className="shrink-0" />
               Fale com um especialista
