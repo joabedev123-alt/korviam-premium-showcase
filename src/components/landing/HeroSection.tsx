@@ -1,4 +1,4 @@
-const heroImage = "/p19.jpeg";
+const heroImage = "/hero-facade.jpg";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 
 const HeroSection = () => {
@@ -13,7 +13,7 @@ const HeroSection = () => {
       <img
         src={heroImage}
         alt="Fachada moderna com esquadrias de alumínio de alto padrão"
-        className="absolute inset-0 w-full h-full object-contain sm:object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-center"
         width={1920}
         height={1080}
       />
