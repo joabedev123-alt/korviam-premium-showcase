@@ -22,21 +22,24 @@ const TestimonialsSection = () => {
   return (
     <section className="py-16 sm:py-24 lg:py-32 bg-charcoal">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center mb-16 reveal">
+        <div className="text-center mb-10 sm:mb-16">
           <p className="text-silver uppercase tracking-[0.2em] text-sm font-semibold mb-4">Depoimentos</p>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
             O que nossos clientes dizem
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8">
           {testimonials.map((t, i) => (
-            <div key={i} className={`reveal delay-${(i + 1) * 100} p-8 rounded-sm border border-primary-foreground/10 bg-primary-foreground/5`}>
-              <Quote size={32} className="text-navy-light mb-6 opacity-50" />
-              <p className="text-silver leading-relaxed mb-8 italic">"{t.text}"</p>
+            <div
+              key={i}
+              className="p-6 sm:p-8 rounded-sm border border-primary-foreground/10 bg-primary-foreground/5"
+            >
+              <Quote size={28} className="text-navy-light mb-4 sm:mb-6 opacity-50" />
+              <p className="text-silver text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 italic">"{t.text}"</p>
               <div>
-                <p className="font-semibold text-primary-foreground">{t.name}</p>
-                <p className="text-steel text-sm">{t.role}</p>
+                <p className="font-semibold text-primary-foreground text-sm sm:text-base">{t.name}</p>
+                <p className="text-steel text-xs sm:text-sm">{t.role}</p>
               </div>
             </div>
           ))}

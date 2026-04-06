@@ -196,7 +196,7 @@ const PortfolioSection = () => {
   const nextImage     = useCallback(() => setLightboxIndex((p) => p !== null ? (p + 1) % allImages.length : 0), []);
 
   return (
-    <section id="portfolio" className="py-16 sm:py-24 lg:py-32 bg-charcoal overflow-hidden">
+    <section id="portfolio" className="py-16 sm:py-24 lg:py-32 bg-charcoal overflow-hidden w-full">
       {/* Cabeçalho */}
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">

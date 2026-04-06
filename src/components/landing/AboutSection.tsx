@@ -40,7 +40,7 @@ const AboutSection = () => {
               ))}
             </div>
           </div>
-          <div className="reveal-right mt-12 lg:mt-0">
+          <div className="reveal-right mt-8 lg:mt-0 pb-6 sm:pb-8">
             <div className="relative">
               <img
                 src={aboutImage}
