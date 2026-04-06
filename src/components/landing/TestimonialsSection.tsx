@@ -20,8 +20,8 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-24 lg:py-32 bg-charcoal">
-      <div className="container mx-auto px-6">
+    <section className="py-16 sm:py-24 lg:py-32 bg-charcoal">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 reveal">
           <p className="text-silver uppercase tracking-[0.2em] text-sm font-semibold mb-4">Depoimentos</p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
@@ -29,7 +29,7 @@ const TestimonialsSection = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {testimonials.map((t, i) => (
             <div key={i} className={`reveal delay-${(i + 1) * 100} p-8 rounded-sm border border-primary-foreground/10 bg-primary-foreground/5`}>
               <Quote size={32} className="text-navy-light mb-6 opacity-50" />

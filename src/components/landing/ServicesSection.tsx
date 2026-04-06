@@ -11,20 +11,20 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="servicos" className="py-24 lg:py-32 bg-charcoal">
-      <div className="container mx-auto px-6">
+    <section id="servicos" className="py-16 sm:py-24 lg:py-32 bg-charcoal">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 reveal">
           <p className="text-navy-light uppercase tracking-[0.2em] text-sm font-semibold mb-4 text-silver">Soluções</p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
             Nossas Soluções em Alumínio
           </h2>
-          <p className="text-steel max-w-2xl mx-auto text-lg">
+          <p className="text-steel max-w-2xl mx-auto text-base sm:text-lg">
             Oferecemos um portfólio completo de soluções em esquadrias de alumínio, 
             projetadas para atender às mais exigentes demandas de engenharia e arquitetura.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, i) => (
             <div
               key={i}

@@ -10,8 +10,8 @@ const stats = [
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-24 lg:py-32 bg-card">
-      <div className="container mx-auto px-6">
+    <section id="sobre" className="py-16 sm:py-24 lg:py-32 bg-card">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="reveal-left">
             <p className="text-navy-light uppercase tracking-[0.2em] text-xs md:text-sm font-semibold mb-4">Sobre a Empresa</p>
@@ -49,7 +49,7 @@ const AboutSection = () => {
                 width={800}
                 height={600}
               />
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-navy rounded-sm flex items-center justify-center">
+              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-24 h-24 sm:w-32 sm:h-32 bg-navy rounded-sm flex items-center justify-center">
                 <div className="text-center text-primary-foreground">
                   <span className="text-3xl font-bold block">15+</span>
                   <span className="text-xs uppercase tracking-wider">Anos</span>

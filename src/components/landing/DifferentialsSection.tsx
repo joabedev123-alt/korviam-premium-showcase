@@ -11,8 +11,8 @@ const differentials = [
 
 const DifferentialsSection = () => {
   return (
-    <section id="diferenciais" className="py-24 lg:py-32 bg-card">
-      <div className="container mx-auto px-6">
+    <section id="diferenciais" className="py-16 sm:py-24 lg:py-32 bg-card">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 reveal">
           <p className="text-navy-light uppercase tracking-[0.2em] text-sm font-semibold mb-4">Diferenciais</p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
@@ -23,7 +23,7 @@ const DifferentialsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {differentials.map((item, i) => (
             <div key={i} className={`reveal delay-${(i % 3 + 1) * 100} flex gap-5 group`}>
               <div className="w-12 h-12 min-w-[3rem] rounded-sm bg-navy flex items-center justify-center group-hover:scale-110 transition-transform duration-300">

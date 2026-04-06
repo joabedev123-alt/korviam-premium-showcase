@@ -11,44 +11,57 @@ const links = [
 ];
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [atTop, setAtTop] = useState(true);
   const [open, setOpen] = useState(false);
   const whatsappUrl = "https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.";
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
+    const onScroll = () => setAtTop(window.scrollY < 10);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-charcoal/95 backdrop-blur-md shadow-lg py-3" : "bg-transparent py-5"}`}>
-      <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#inicio" className="flex items-center">
-          <img 
-            src="/Eliezer 01.jpeg" 
-            alt="Eliezer Alumínio Logo" 
-            className="h-10 md:h-12 w-auto object-contain"
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        atTop
+          ? "opacity-100 translate-y-0 bg-transparent py-5"
+          : "opacity-0 -translate-y-full pointer-events-none py-5"
+      }`}
+    >
+      <div className="container mx-auto px-6 flex items-center justify-between relative">
+        {/* Logo — esquerda */}
+        <a href="#inicio" className="flex items-center flex-shrink-0">
+          <img
+            src="/Eliezer 01-Photoroom.png"
+            alt="Eliezer Alumínio Logo"
+            className="h-20 md:h-28 w-auto object-contain"
           />
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        {/* Links — centro absoluto */}
+        <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-silver hover:text-primary-foreground text-sm uppercase tracking-wider transition-colors duration-300">
+            <a key={l.href} href={l.href} className="text-silver hover:text-primary-foreground text-sm uppercase tracking-wider transition-colors duration-300 whitespace-nowrap">
               {l.label}
             </a>
           ))}
-          <a 
+        </div>
+
+        {/* Botão — direita */}
+        <div className="hidden md:flex items-center flex-shrink-0">
+          <a
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#25D366] text-white text-sm font-black rounded-lg hover:bg-[#12883d] transition-all shadow-[0_4px_12px_rgba(37,211,102,0.3)] hover:scale-105 active:scale-95"
           >
-            <WhatsAppIcon size={18} color="white" />
+            <WhatsAppIcon size={22} color="white" />
             Orçamento
           </a>
         </div>
 
+        {/* Hamburger — mobile */}
         <button onClick={() => setOpen(!open)} className="md:hidden text-primary-foreground" aria-label="Menu">
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -62,14 +75,14 @@ const Navbar = () => {
                 {l.label}
               </a>
             ))}
-            <a 
+            <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setOpen(false)} 
+              onClick={() => setOpen(false)}
               className="flex items-center justify-center gap-3 w-full text-center px-5 py-4 bg-[#25D366] text-white text-base font-black rounded-lg shadow-[0_8px_20px_rgba(37,211,102,0.3)] active:scale-95"
             >
-              <WhatsAppIcon size={20} color="white" />
+              <WhatsAppIcon size={24} color="white" />
               Solicitar Orçamento
             </a>
           </div>
