@@ -18,7 +18,7 @@ const DifferentialsSection = () => {
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Por que escolher a Korviam
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base md:text-lg">
             Compromisso com excelência em cada detalhe do seu projeto.
           </p>
         </div>
@@ -30,8 +30,8 @@ const DifferentialsSection = () => {
                 <item.icon size={22} className="text-primary-foreground" />
               </div>
               <div>
-                <h3 className="font-semibold text-lg text-foreground mb-2">{item.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{item.text}</p>
+                <h3 className="font-semibold text-sm sm:text-base lg:text-lg text-foreground mb-2">{item.title}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">{item.text}</p>
               </div>
             </div>
           ))}

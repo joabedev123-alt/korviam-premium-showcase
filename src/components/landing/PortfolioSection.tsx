@@ -158,7 +158,7 @@ const CarouselRow = ({ images, direction, speed, globalOffset, onImageClick }: C
               <img
                 src={img.src}
                 alt={img.title}
-                className="w-full h-56 sm:h-60 object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-48 sm:h-60 object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
                 width={800}
                 height={600}
@@ -207,7 +207,10 @@ const PortfolioSection = () => {
           <p className="text-steel max-w-2xl mx-auto text-base sm:text-lg">
             Conheça alguns dos projetos que demonstram nosso padrão de qualidade e excelência técnica.
           </p>
-          <p className="text-steel/50 text-sm mt-2">Clique em qualquer imagem para ampliar ·  Passe o mouse para pausar</p>
+          <p className="text-steel/50 text-xs sm:text-sm mt-2">
+            <span className="sm:hidden">Toque em qualquer imagem para ampliar · Toque no carrossel para pausar</span>
+            <span className="hidden sm:inline">Clique em qualquer imagem para ampliar · Passe o mouse para pausar</span>
+          </p>
         </div>
       </div>
 

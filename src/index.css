@@ -58,16 +58,22 @@
 @layer base {
   * {
     @apply border-border;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
   }
 
   body {
     @apply bg-background text-foreground font-sans;
     font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    /* iOS safe area */
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
   body {
@@ -76,6 +82,18 @@
 
   h1, h2, h3 {
     font-family: 'Playfair Display', serif;
+  }
+
+  /* Mínimo de área clicável para links e botões no mobile */
+  a, button {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Inputs e áreas de texto com tamanho mínimo para evitar zoom no iOS */
+  input, textarea, select {
+    font-size: 16px !important;
   }
 }
 

@@ -19,7 +19,7 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 overlay-dark" />
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center pt-20 sm:pt-24 pb-12 sm:pb-16">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center pt-20 sm:pt-24 pb-28 sm:pb-16">
         <div className="max-w-4xl mx-auto">
           <p className="text-silver uppercase tracking-[0.2em] sm:tracking-[0.35em] md:tracking-[0.5em] text-sm sm:text-lg md:text-xl lg:text-2xl font-semibold mb-3 md:mb-8 animate-fade-in-up">
             Korviam Alumínio

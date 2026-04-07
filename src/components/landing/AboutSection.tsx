@@ -4,14 +4,14 @@ const aboutImage = "/about-project-01.jpeg";
 
 const stats = [
   { icon: Award, label: "Qualidade Certificada", value: "Excelência" },
-  { icon: Users, label: "Clientes Atendidos", value: "500+" },
-  { icon: Target, label: "Projetos Entregues", value: "1.200+" },
-  { icon: Wrench, label: "Anos de Experiência", value: "15+" },
+  { icon: Target, label: "Projetos Entregues", value: "300+" },
+  { icon: Users, label: "Anos de Empresa", value: "5+" },
+  { icon: Wrench, label: "Anos de Experiência do Time", value: "15+" },
 ];
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-16 sm:py-24 lg:py-32 bg-card">
+    <section id="sobre" className="py-16 sm:py-24 lg:py-32 bg-card pb-28 sm:pb-24 lg:pb-32">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="reveal-left">
@@ -52,8 +52,8 @@ const AboutSection = () => {
               />
               <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-24 h-24 sm:w-32 sm:h-32 bg-navy rounded-sm flex items-center justify-center">
                 <div className="text-center text-primary-foreground">
-                  <span className="text-3xl font-bold block">15+</span>
-                  <span className="text-xs uppercase tracking-wider">Anos</span>
+                  <span className="text-3xl font-bold block">300+</span>
+                  <span className="text-xs uppercase tracking-wider">Projetos</span>
                 </div>
               </div>
             </div>

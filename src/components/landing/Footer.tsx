@@ -2,7 +2,7 @@ import { Instagram, Facebook, Linkedin, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-charcoal py-12 sm:py-16 border-t border-primary-foreground/10">
+    <footer className="bg-charcoal py-12 sm:py-16 border-t border-primary-foreground/10 pb-24 sm:pb-16">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-10 sm:mb-12">
           {/* Logo + descrição */}
